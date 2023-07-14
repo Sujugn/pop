@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <button id="show">팝업열기</button>
+
+
+    <div class="background">
+      <div class="window">
+        <div class="popup">
+          <button id="close">팝업닫기</button>  
+
+              <div class="popup_inner">
+                <div class="project_img">
+
+                </div><!-- //projext_img -->
+                
+                <div class="project_text">
+                 <div class="p_text01">
+
+                 </div>
+                </div><!-- //projext_text -->
+
+
+                <div class="project_process">
+                  <div class="process_title">
+                    <p>problem <br/>
+                      <span>solving process</span></p>
+                  </div>
+
+                </div>
+
+
+              </div>  <!-- //projext_inner -->       
+          </div>
+        </div><!-- //popup -->
+        </div><!-- //window -->
+      </div><!-- //background -->
+    </div>
+    <!-- //background -->
+  </body>
+
+  <script>
+    function show() {
+      document.querySelector(".background").className = "background show";
+    }
+
+    function close() {
+      document.querySelector(".background").className = "background";
+    }
+
+    document.querySelector("#show").addEventListener("click", show);
+    document.querySelector("#close").addEventListener("click", close);
+  </script>
+</html>
